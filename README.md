@@ -1,6 +1,6 @@
 # Aint Queue Client
 
-[Aint Queue](https://github.com/stcer/aint-queue) 是基于 Swoole 的一个异步队列库, 此项目是一个客户端, 用于向 Aint Queue 服务器发送延时任务
+[Aint Queue](https://github.com/stcer/aint-queue) 是基于 Swoole 的一个异步队列库, 此项目是一个客户端, 用于向 Aint Queue服务器增加延时任务
 
 ## Install 
 
@@ -11,7 +11,7 @@ composer require stcer/aint-queue-client -vvv
 ## Example
 
 客户端增加延时任务示例， 参考[example/demo-client.php](example/demo-client.php)
-```
+```php
 use Composer\Autoload\ClassLoader;
 use j\AintQueue\Client\AliasMessageEncoder;
 use j\AintQueue\Client\Driver\DriverFactory;
@@ -44,7 +44,7 @@ $queue->push([
 
 服务端配置示例
 
-```
+```php
 use Littlesqx\AintQueue\Driver\Redis\Queue as RedisQueue;
 use Littlesqx\AintQueue\Serializer\AliasMessageEncoder;
 use Stcer\AintQueueDemo\job\SimpleJob;
