@@ -1,0 +1,31 @@
+{
+    "name": "stcer/aint-queue",
+    "description": "a client for aint-queue ",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "stcer",
+            "email": "ab12cxyh@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*",
+        "predis/predis": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "j\\AintQueue\\Client\\": "src"
+        }
+    },
+    "suggest": {
+        "php": ">=7.3"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "archive": {
+        "exclude": ["/example"]
+    }
+}
