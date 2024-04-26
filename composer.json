@@ -1,5 +1,5 @@
 {
-    "name": "stcer/aint-queue",
+    "name": "stcer/aint-queue-client",
     "description": "a client for aint-queue ",
     "type": "library",
     "license": "MIT",
